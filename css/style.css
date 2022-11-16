@@ -8,6 +8,7 @@ body {
   background: #ffffff;
   color: #111111;
   transition: all 0.5s;
+  font-family: "Manrope", sans-serif;
 }
 
 p {
@@ -40,5 +41,125 @@ button:focus-visible {
   outline: none;
 }
 
-/*--- form ---*/
-/*------ responsive ----*//*# sourceMappingURL=style.css.map */
+.common-btn {
+  background-color: #ee343a;
+  border: 1px solid #ee343a;
+  color: #ffffff;
+  min-width: 150px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+.common-btn:hover {
+  background-color: #ee343a;
+  color: #ffffff;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+
+/*------ responsive ----*/
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+header .row {
+  align-items: center;
+}
+header .logo img {
+  max-width: 220px;
+}
+header nav ul .nav-item {
+  position: relative;
+}
+header nav ul .nav-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #ee343a;
+  transition: width 0.2s;
+  bottom: -8px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header nav ul .nav-item .nav-link {
+  color: #111111;
+  font-size: 16px;
+  padding: 0 12px !important;
+  font-weight: 600;
+}
+header nav ul .nav-item:hover::after {
+  width: 100%;
+}
+header nav ul .nav-item:hover .nav-link {
+  color: #ee343a;
+}
+header .right-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 30px;
+}
+header .right-menu ul li a svg {
+  width: 18px;
+}
+
+.search-box {
+  transition: all 0.5s;
+}
+.search-box .search-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 121;
+  background: rgba(0, 0, 0, 0.9);
+}
+.search-box .search-wrap.search-wrap-show {
+  display: block;
+}
+.search-box .search-wrap .search-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.search-box .search-wrap .search-inner .search-form {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.search-box .search-wrap .search-inner .search-form input {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  height: 40px;
+  background-color: transparent;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.search-box .search-wrap .search-cross {
+  position: absolute;
+  right: 110px;
+  top: 65px;
+}
+.search-box .search-wrap .search-cross .search-cross-icon svg {
+  fill: #ffffff;
+}
+
+@media (max-width: 1440px) {
+  header nav ul .nav-item .nav-link {
+    font-size: 14px;
+    padding: 0 10px !important;
+  }
+}

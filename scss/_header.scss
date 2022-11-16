@@ -1,0 +1,123 @@
+header{
+    background-color: $white-color;
+    padding: 20px 0;
+    .row{
+        align-items: center;
+    }
+    .logo{
+        img{
+            max-width: 220px;
+        }
+    }
+    nav{
+        ul{
+            .nav-item{
+                position: relative;
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: $main-color;
+                    transition: width .2s;
+                    bottom: -8px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                .nav-link{
+                    color: $black-color;
+                    font-size: 16px;
+                    padding: 0 12px !important;
+                    font-weight: 600;
+                }
+                &:hover{
+                    &::after{
+                        width: 100%;
+                    }
+                    .nav-link{
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+    .right-menu{
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            column-gap: 30px;
+            li{
+                a{
+                    svg{
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search-box{
+    transition: all 0.5s;
+    .search-wrap{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        z-index: 121;
+        background: rgba(0, 0, 0, 0.9);
+        &.search-wrap-show{
+            display: block;
+        }
+        .search-inner{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .search-form{
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                transform: translateY(-50%);
+                input{
+                    width: 50%;
+                    margin: 0 auto;
+                    display: block;
+                    height: 40px;
+                    background-color: transparent;
+                    color: $white-color;
+                    border-bottom: 1px solid $white-color;
+                }
+            }
+        }
+        .search-cross{
+            position: absolute;
+            right: 110px;
+            top: 65px;
+            .search-cross-icon{
+                svg{
+                    fill: $white-color;
+                }
+            }
+        }
+    }
+}
+
+@include for-1440{
+    header {
+        nav {
+            ul {
+                .nav-item {
+                    .nav-link{
+                        font-size: 14px;
+                        padding: 0 10px !important;
+                    }
+                }
+            }
+        }
+    }
+}
