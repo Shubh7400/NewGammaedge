@@ -68,7 +68,6 @@ input {
   padding: 0 30px;
   text-transform: capitalize;
   font-weight: 600;
-  margin: 0 auto;
 }
 .common-btn:hover {
   background-color: #ee343a;
@@ -108,6 +107,14 @@ input {
   100% {
     transform: translateY(-20px);
     -webkit-transform: translateY(-20px);
+  }
+}
+@keyframes rotate-style {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 /*------ responsive ----*/
@@ -276,6 +283,9 @@ header .right-menu ul li a svg {
   text-transform: capitalize;
   color: #ffffff;
   line-height: 92px;
+}
+.banner-wrap .banner-cont .common-btn {
+  margin: 0 auto;
 }
 
 .animated {
@@ -476,3 +486,96 @@ header .right-menu ul li a svg {
   text-align: center;
   color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
+.why-wrapper {
+  padding: 100px 0;
+}
+.why-wrapper .row {
+  row-gap: 20px;
+}
+.why-wrapper .cmmn-head {
+  margin-bottom: 40px;
+}
+.why-wrapper .why-box-wrap {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+.why-wrapper .why-box-wrap.box-gap {
+  margin-top: 30px;
+}
+.why-wrapper .why-box-wrap .why-box {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.why-wrapper .why-box-wrap .why-box svg {
+  width: 50px;
+  fill: #ee343a;
+}
+.why-wrapper .why-box-wrap .why-box .why-content p {
+  padding-top: 5px;
+}
+.why-wrapper .why-image {
+  position: relative;
+}
+.why-wrapper .why-image .shape {
+  position: absolute;
+  top: 20px;
+  left: 35%;
+  transform: translateX(-50%);
+  z-index: -1;
+  animation: rotate-style 50s linear infinite;
+}
+.why-wrapper .why-image .shape img {
+  max-width: 355px;
+}
+
+@media (max-width: 576px) {
+  .why-wrapper .why-box-wrap {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .why-wrapper .why-image .shape img {
+    max-width: 170px;
+  }
+}
+.contact-wrapper .row {
+  row-gap: 20px;
+}
+.contact-wrapper .contact-content {
+  padding: 40px 0;
+  max-width: 645px;
+  margin: 0 0 0 auto;
+}
+.contact-wrapper .contact-content form {
+  row-gap: 15px;
+}
+.contact-wrapper .contact-content form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #111111;
+  font-weight: 500;
+}
+.contact-wrapper .contact-content form input {
+  border: 1px solid #696969;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+}
+.contact-wrapper .contact-content form input:focus {
+  border-color: #ee343a;
+}
+.contact-wrapper .contact-content form textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #696969;
+  padding: 10px;
+}
+.contact-wrapper .contact-content form textarea:focus {
+  outline: none;
+  border-color: #ee343a;
+}
+.contact-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
