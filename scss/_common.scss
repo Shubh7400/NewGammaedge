@@ -2,6 +2,7 @@
 $main-color:#ee343a;
 $white-color:#ffffff;
 $black-color:#111111;
+$body-color: #696969;
 
 body{
     margin: 0;
@@ -11,9 +12,9 @@ body{
     width: 100%;
     font-weight: 400;
     background: $white-color;
-    color: $black-color;
+    color: $body-color;
     transition: all 0.5s;
-	font-family: "Manrope", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 p{
     margin: 0;
@@ -31,9 +32,17 @@ a{
 
 
 h1,h2,h3,h4,h5,h6{
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
+	color: $black-color;
+	font-family: "Manrope", sans-serif;
 }
+
+h2{
+	font-size: 50px;
+}
+
+
 button{
     border: 0;
     &:focus{
@@ -42,6 +51,11 @@ button{
     &:focus-visible{
         outline: none;
     }
+}
+
+input{
+	border: 0;
+	outline: 0;
 }
 
 .common-btn{
@@ -60,12 +74,39 @@ button{
 		color: $white-color;
 	}
 }
-
-input{
-	border: 0;
-	outline: 0;
+.cmmn-head{
+    h6{
+        color: $main-color;
+        text-transform: uppercase;
+    }
+    h2{
+        font-weight: 700;
+		padding-bottom: 20px;
+    }
 }
 
+// animation
+.animate-top-y{
+	animation-name: top-y;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes top-y{
+	0% {
+		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
+	}
+	
+	50% {
+		transform: translateY(-10px);
+		-webkit-transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
+	}
+}
 
 
 
