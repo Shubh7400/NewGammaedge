@@ -1,10 +1,10 @@
 .banner-wrap{
     position: relative;
-    max-height: 650px;
+    max-height: 670px;
     .banner-slider{
         .owl-carousel{
             img{
-                max-height: 650px;
+                max-height: 670px;
                 filter: brightness(0.5);
             }
             .owl-nav{
@@ -51,7 +51,7 @@
     }
     .banner-cont{
         text-align: center;
-        max-width: 555px;
+        max-width: 770px;
         margin: 0 auto;
         position: absolute;
         left: 50%;
@@ -65,15 +65,109 @@
             color: $white-color;
         }
         h3{
-            margin: 7px 0;
-            font-size: 72px;
+            margin: 12px 0;
+            font-size: 76px;
             text-transform: capitalize;
             color: $white-color;
-            line-height: 82px;
+            line-height: 92px;
         }
     }
 }
 
 .animated  {
     animation-duration : 2000ms !important ;
-  } 
+  }
+
+// service section
+
+.service-wrap{
+	padding: 100px 0;
+    background: #f9f9f9;
+    .our-offer-carousel {
+		.owl-dots {
+			.owl-dot {
+				span {
+					background: #ffffff none repeat scroll 0 0;
+					border: 2px solid;
+					height: 15px;
+					margin: 0 5px;
+					width: 15px;
+				}
+			}
+			.owl-dot.active {
+				span {
+					background: $main-color none repeat scroll 0 0;
+					border-color: $main-color;
+				}
+			}
+		}
+	}
+    .item {
+		padding: 50px 20px ;
+        text-align: center;
+		background: #ffffff none repeat scroll 0 0;
+		// border-left: 2px solid $main-color;
+		box-shadow: 0 0 10px #cccccc;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		margin-bottom: 30px;
+		&::after {
+			background: $main-color none repeat scroll 0 0;
+			content: "";
+			height: 100%;
+			left: -100%;
+			position: absolute;
+			top: 0;
+			transition: all 0.35s ease-in-out;
+			width: 100%;
+			z-index: -1;
+		}
+		svg{
+            width: 25px;
+			fill: #ffffff;
+        }
+        h4{
+            font-size: 22px;
+            margin: 20px 0 10px;
+        }
+        p{
+            font-size: 1rem;
+			color: #797979;
+        }
+		span{
+			height: 80px;
+			width: 80px;
+			border-radius: 50px;
+			background-color: $main-color;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			transition: all 0.5s;
+			outline: 2px solid $main-color;
+   			outline-offset: 5px;
+		}
+		&:hover {
+			&::after {
+				left: 0;
+			}
+			span{
+				background-color: #ffffff;
+				outline-color: $white-color;
+				svg{
+					fill: $main-color;
+				}
+			}
+			h4 {
+				color: #ffffff !important;
+			}
+			p {
+				color: #ffffff !important;
+			}
+		}
+	}
+}
+
+
+

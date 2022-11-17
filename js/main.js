@@ -6,7 +6,7 @@ $('.banner-slider .owl-carousel').owlCarousel({
     dots:false,
     items:1,
     autoplay:true,
-    autoplayTimeout:3000,
+    autoplayTimeout:2000,
     autoplayHoverPause:true,
     animateOut: "fadeOut",
     animateIn: "fadeIn",
