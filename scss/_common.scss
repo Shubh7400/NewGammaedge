@@ -74,7 +74,6 @@ input{
 	padding:0 30px;
 	text-transform: capitalize;
 	font-weight: 600;
-	margin:0 auto;
 	&:hover{
 		background-color: $main-color;
 		color: $white-color;
@@ -111,6 +110,15 @@ input{
 	100% {
 		transform: translateY(-20px);
 		-webkit-transform: translateY(-20px);
+	}
+}
+@keyframes rotate-style{
+	0% {
+		transform: rotate(0deg);
+	}
+	
+	100% {
+		transform: rotate(360deg);
 	}
 }
 
