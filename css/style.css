@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 button {
@@ -81,7 +81,12 @@ input {
 }
 .cmmn-head h2 {
   font-weight: 700;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.max-para {
+  max-width: 550px;
+  margin: 0 auto 50px;
 }
 
 .animate-top-y {
@@ -278,8 +283,8 @@ header .right-menu ul li a svg {
 }
 
 .service-wrap {
-  padding: 100px 0;
-  background: #f9f9f9;
+  padding: 70px 0;
+  background: #eeeeee;
 }
 .service-wrap .our-offer-carousel .owl-dots .owl-dot span {
   background: #ffffff none repeat scroll 0 0;
@@ -356,7 +361,7 @@ header .right-menu ul li a svg {
 }
 
 .about-wrapper {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 .about-wrapper .row {
   align-items: center;
@@ -381,4 +386,93 @@ header .right-menu ul li a svg {
     flex-wrap: wrap;
     row-gap: 15px;
   }
+}
+.client-wrap {
+  background-image: url("../images/bg-client.jpg");
+  padding: 100px 0;
+}
+.client-wrap h2 {
+  color: #ffffff;
+}
+.client-wrap .owl-carousel .owl-nav {
+  margin: 0;
+  display: block;
+  display: flex;
+  column-gap: 10px;
+  position: absolute;
+  right: 0;
+  top: -80px;
+}
+.client-wrap .owl-carousel .owl-nav button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #ee343a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  transition: all 0.5s;
+}
+.client-wrap .owl-carousel .owl-nav svg {
+  width: 13px;
+  fill: #ffffff;
+}
+.client-wrap .item {
+  padding: 35px 45px;
+  background-color: rgba(34, 34, 34, 0.5411764706);
+  position: relative;
+  border-radius: 7px;
+}
+.client-wrap .item span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ee343a;
+  width: 65px;
+  height: 65px;
+  line-height: 40px;
+  padding-left: 10px;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  color: #fff;
+  border-top-left-radius: 7px;
+}
+.client-wrap .item span svg {
+  width: 20px;
+  fill: #ffffff;
+}
+.client-wrap .item p {
+  color: #ffffff;
+}
+.client-wrap .item h6 a {
+  color: #ee343a;
+}
+
+.counter-wrap span {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  background-color: #ee343a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: all 0.5s;
+  border: 5px solid #ffd9db;
+  outline-offset: 5px;
+}
+.counter-wrap span svg {
+  width: 25px;
+  fill: #ffffff;
+}
+.counter-wrap .count-digit {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0 0;
+  color: #fff;
+}
+.counter-wrap h6 {
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

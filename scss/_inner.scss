@@ -80,8 +80,8 @@
 // service section
 
 .service-wrap{
-	padding: 100px 0;
-    background: #f9f9f9;
+	padding: 70px 0;
+    background: #eeeeee;
     .our-offer-carousel {
 		.owl-dots {
 			.owl-dot {
@@ -174,7 +174,7 @@
 
 // about-start
 .about-wrapper{
-    padding: 100px 0;
+    padding: 60px 0;
     .row{
         align-items: center;
     }
@@ -202,4 +202,107 @@
             row-gap: 15px;
         }
     }
+}
+
+
+
+// client wrap
+.client-wrap{
+	background-image: url('../images/bg-client.jpg');
+	padding: 100px 0;
+	h2{
+		color: $white-color;
+	}
+	.owl-carousel{
+		.owl-nav{
+			margin: 0;
+			display: block;
+			display: flex;
+			column-gap: 10px;
+			position: absolute;
+			right: 0;
+			top: -80px;
+			button{
+				width: 40px;
+				height: 40px;
+				border-radius: 50px;
+				background-color: $main-color;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0;
+				transition: all 0.5s;
+				// top: 50%;
+				// transform: translateY(-50%);
+			}
+			svg{
+				width: 13px;
+				fill: $white-color;
+			}
+		}
+	}
+
+	.item{
+		padding: 35px 45px;
+		background-color: #2222228a;
+		position: relative;
+		border-radius: 7px;
+		span{
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: $main-color;
+			width: 65px;
+			height: 65px;
+			line-height: 40px;
+			padding-left: 10px;
+			clip-path: polygon(0 0, 0% 100%, 100% 0);
+			color: #fff;
+			border-top-left-radius: 7px;
+			svg{
+				width: 20px;
+				fill: $white-color;
+			}
+		}
+		p{
+			color: $white-color;
+		}
+		h6{
+			a{
+				color: $main-color;
+			}
+		}
+	}
+}
+
+// counter wrap
+.counter-wrap{
+	span{
+		height: 80px;
+		width: 80px;
+		border-radius: 50px;
+		background-color: $main-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		transition: all 0.5s;
+		border: 5px solid #ffd9db;
+		   outline-offset: 5px;
+		   svg{
+			width: 25px;
+			fill: #ffffff;
+		}
+	}
+	.count-digit {
+		font-size: 40px;
+		text-align: center;
+		margin: 10px 0 0;
+		color: #fff;
+	}
+	h6{
+		font-size: 18px;
+		text-align: center;
+		color: #ffffff;
+	}
 }
