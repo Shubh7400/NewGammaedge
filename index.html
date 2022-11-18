@@ -21,23 +21,28 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                     <div class="logo">
                         <a href="javascript:;">
                             <img src="images/logo.png" alt="logo">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <nav class="navbar navbar-expand-lg">
+                <div class="col-lg-9 col-md-6 col-sm-6 col-6">
+                    <nav class="navbar navbar-expand-lg justify-content-end">
                         <div class="container-fluid">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false"
                                 aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <!--just add these span here-->
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <!--/end span-->
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                <ul class="navbar-nav align-items-center">
                                     <li class="nav-item">
                                         <a class="nav-link" href="javascript:;">Home</a>
                                     </li>
@@ -45,343 +50,225 @@
                                         <a class="nav-link" href="javascript:;">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">Service</a>
+                                        <a class="nav-link" href="javascript:;">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">Blog</a>
+                                        <a class="nav-link" href="javascript:;">Our Clients</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">Our Team</a>
+                                        <a class="nav-link" href="javascript:;">Technologies</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">Project</a>
+                                        <a class="nav-link" href="javascript:;">Why Choose Us</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">Partners</a>
-                                    </li>
+                                    <li class="ms-2"><a href="javascript:;" class="common-btn">Contact Us
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg></span>
+                                        </a></li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
                 </div>
-                <div class="col-lg-3">
-                    <div class="right-menu">
-                        <ul>
-                            <li class="search-box">
-                                <a href="javascript:;" class="search">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
-                                    </svg>
-                                </a>
-                                <div class="search-wrap">
-                                    <div class="search-inner">
-                                        <div class="search-cross">
-                                            <a href="javascript:;" class="search-cross-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                                    <path
-                                                        d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                        <div class="search-form">
-                                            <input type="search" placeholder="Search Here">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="javascript:;" class="common-btn">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
+
+    <!-- sidebar -->
+    <div id="sidebar">
+        <div class="respnsv-logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div id="cssmenu">
+            <ul>
+                <li><a href="javascript:;">Home</a></li>
+                <li><a href="javascript:;">About Us</a></li>
+                <li><a href="javascript:;">Services</a></li>
+                <li><a href="javascript:;">Our Clients</a></li>
+                <li><a href="javascript:;">Technologies</a></li>
+                <li><a href="javascript:;">Why Choose Us</a></li>
+                <li><a href="javascript:;">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
     <!-- header end -->
 
     <!-- banner start -->
     <div class="banner-wrap">
-        <div class="banner-slider">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="images/banner1.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img src="images/banner2.webp" alt="">
-                    <!-- <h2>3</h2> -->
-                </div>
-                <div class="item">
-                    <img src="images/banner3.jpg" alt="">
-                    <!-- <h2>3</h2> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="banner-content">
+                        <h1>Your business <br> deserves a great website.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="javascript:;" class="banner-btn">Get Started</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="banner-cont">
-            <h5>Optimize IT Systems</h5>
-            <h3>Creating a better IT solutions
-            </h3>
-            <a href="javascript:;" class="common-btn">get started now</a>
-        </div>
     </div>
     <!-- banner end -->
-
 
     <!-- about-us-start -->
     <div class="about-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <div class="animate-top-y">
                         <img src="images/about-us.png" alt="img" class="w-100">
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="cmmn-head">
-                        <h6>Who We Are</h6>
-                        <h2>About Us</h2>
-                    </div>
-                    <p class="about-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quod culpa non perferendis, pariatur eius sed odio quidem rem explicabo dolor, adipisci quaerat sit incidunt modi voluptas atque. Exercitationem, esse! </p>
-                    <div class="about-box">
-                        <div>
-                            <img src="images/business.png" alt="icon">
-                        </div>
-                        <div class="about-box-content">
-                            <h6>Business App</h6>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus ad cupiditate.</p>
-                        </div>
-                    </div>
-                    <div class="about-box mt-4">
-                        <div>
-                            <img src="images/crm.png" alt="icon">
-                        </div>
-                        <div class="about-box-content">
-                            <h6>CRM Tools</h6>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus ad cupiditate.</p>
-                        </div>
-                    </div>
+                <div class="col-lg-5">
+                    <h2>About Us</h2>
+                    <h4>We Provide Best Business Solution in Town</h4>
+                    <p>Thriving to push our limits and creative boundaries by producing an outcome to rise your Business
+                        on the Top in Digital field.Our Talent and Expertise will mount your vision, sharing it across
+                        the world. We will be much obliged to see you succeed online</p>
+                    <p class="about-gap">Adding value to business, our skilled software professionals along with
+                        Business domain knowledge, proven methodologies and technology yield high quality solutions</p>
+                    <p class="about-gap">From Startups to enterprises, diverse technological requirements are highly
+                        fulfilled. With the agenda and urge of growing together, our resources have been provided to
+                        other teams on a Monthly and Hourly basis for the Enhancement of their business.</p>
+                    <p class="about-gap">Breaking the barriers and striving out of your expectations, we bring the best
+                        out of you inturn changing the game.
+                        For Hiring and Payroll, do contact us. We are always available helping you to navigate even the
+                        most typical Human Resource issues</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- about-us-end -->
-    <!-- our service start -->
+
+    <!-- our-service-start -->
     <div class="service-wrap">
         <div class="container">
-            <div class="heading">
-
-            </div>
-                <div class="row">
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M373.5 27.1C388.5 9.9 410.2 0 433 0c43.6 0 79 35.4 79 79c0 22.8-9.9 44.6-27.1 59.6L277.7 319l-10.3-10.3-64-64L193 234.3 373.5 27.1zM170.3 256.9l10.4 10.4 64 64 10.4 10.4-19.2 83.4c-3.9 17.1-16.9 30.7-33.8 35.4L24.4 510.3l95.4-95.4c2.6 .7 5.4 1.1 8.3 1.1c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32c0 2.9 .4 5.6 1.1 8.3L1.7 487.6 51.5 310c4.7-16.9 18.3-29.9 35.4-33.8l83.4-19.2z"/></svg>
-                            </span>
-                            <h4>Project creation</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </p>
+            <h2>Our Services</h2>
+            <h4>Odit est perspiciatislaborum et dicta</h4>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="service-box">
+                        <div>
+                            <img src="images/service-01.png" alt="img">
+                        </div>
+                        <div class="service-content">
+                            <h5><a href="javascript:;">Mobile Development</a> </h5>
+                            <p>Eum Ad Dolor Et. Autem Aut Fugiat Debitis Voluptatem Consequuntur Sit</p>
                         </div>
                     </div>
-                    <!-- End Single Item -->
-
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M373.5 27.1C388.5 9.9 410.2 0 433 0c43.6 0 79 35.4 79 79c0 22.8-9.9 44.6-27.1 59.6L277.7 319l-10.3-10.3-64-64L193 234.3 373.5 27.1zM170.3 256.9l10.4 10.4 64 64 10.4 10.4-19.2 83.4c-3.9 17.1-16.9 30.7-33.8 35.4L24.4 510.3l95.4-95.4c2.6 .7 5.4 1.1 8.3 1.1c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32c0 2.9 .4 5.6 1.1 8.3L1.7 487.6 51.5 310c4.7-16.9 18.3-29.9 35.4-33.8l83.4-19.2z"/></svg>
-                            </span>
-                            <h4>Software Development</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M373.5 27.1C388.5 9.9 410.2 0 433 0c43.6 0 79 35.4 79 79c0 22.8-9.9 44.6-27.1 59.6L277.7 319l-10.3-10.3-64-64L193 234.3 373.5 27.1zM170.3 256.9l10.4 10.4 64 64 10.4 10.4-19.2 83.4c-3.9 17.1-16.9 30.7-33.8 35.4L24.4 510.3l95.4-95.4c2.6 .7 5.4 1.1 8.3 1.1c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32c0 2.9 .4 5.6 1.1 8.3L1.7 487.6 51.5 310c4.7-16.9 18.3-29.9 35.4-33.8l83.4-19.2z"/></svg>
-                            </span>
-                            <h4>Porject Management</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M373.5 27.1C388.5 9.9 410.2 0 433 0c43.6 0 79 35.4 79 79c0 22.8-9.9 44.6-27.1 59.6L277.7 319l-10.3-10.3-64-64L193 234.3 373.5 27.1zM170.3 256.9l10.4 10.4 64 64 10.4 10.4-19.2 83.4c-3.9 17.1-16.9 30.7-33.8 35.4L24.4 510.3l95.4-95.4c2.6 .7 5.4 1.1 8.3 1.1c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32c0 2.9 .4 5.6 1.1 8.3L1.7 487.6 51.5 310c4.7-16.9 18.3-29.9 35.4-33.8l83.4-19.2z"/></svg>
-                            </span>
-                            <h4>Porject Impliment</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M373.5 27.1C388.5 9.9 410.2 0 433 0c43.6 0 79 35.4 79 79c0 22.8-9.9 44.6-27.1 59.6L277.7 319l-10.3-10.3-64-64L193 234.3 373.5 27.1zM170.3 256.9l10.4 10.4 64 64 10.4 10.4-19.2 83.4c-3.9 17.1-16.9 30.7-33.8 35.4L24.4 510.3l95.4-95.4c2.6 .7 5.4 1.1 8.3 1.1c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32c0 2.9 .4 5.6 1.1 8.3L1.7 487.6 51.5 310c4.7-16.9 18.3-29.9 35.4-33.8l83.4-19.2z"/></svg>
-                            </span>
-                            <h4>Software Update</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M373.5 27.1C388.5 9.9 410.2 0 433 0c43.6 0 79 35.4 79 79c0 22.8-9.9 44.6-27.1 59.6L277.7 319l-10.3-10.3-64-64L193 234.3 373.5 27.1zM170.3 256.9l10.4 10.4 64 64 10.4 10.4-19.2 83.4c-3.9 17.1-16.9 30.7-33.8 35.4L24.4 510.3l95.4-95.4c2.6 .7 5.4 1.1 8.3 1.1c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32c0 2.9 .4 5.6 1.1 8.3L1.7 487.6 51.5 310c4.7-16.9 18.3-29.9 35.4-33.8l83.4-19.2z"/></svg>
-                            </span>
-                            <h4>24/7 Support</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
                 </div>
+                <div class="col-lg-4">
+                    <div class="service-box">
+                        <div>
+                            <img src="images/service-02.png" alt="img">
+                        </div>
+                        <div class="service-content">
+                            <h5><a href="javascript:;">Web Development</a></h5>
+                            <p>Eum Ad Dolor Et. Autem Aut Fugiat Debitis Voluptatem Consequuntur Sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-box">
+                        <div>
+                            <img src="images/service-03.png" alt="img">
+                        </div>
+                        <div class="service-content">
+                            <h5><a href="javascript:;">IOT Solution</a></h5>
+                            <p>Eum Ad Dolor Et. Autem Aut Fugiat Debitis Voluptatem Consequuntur Sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-box">
+                        <div>
+                            <img src="images/service-04.png" alt="img">
+                        </div>
+                        <div class="service-content">
+                            <h5><a href="javascript:;">Quality Analysis</a></h5>
+                            <p>Eum Ad Dolor Et. Autem Aut Fugiat Debitis Voluptatem Consequuntur Sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-box">
+                        <div>
+                            <img src="images/service-05.png" alt="img">
+                        </div>
+                        <div class="service-content">
+                            <h5><a href="javascript:;">Staffing</a></h5>
+                            <p>Eum Ad Dolor Et. Autem Aut Fugiat Debitis Voluptatem Consequuntur Sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-box">
+                        <div>
+                            <img src="images/service-06.png" alt="img">
+                        </div>
+                        <div class="service-content">
+                            <h5><a href="javascript:;">UI UX Designer</a></h5>
+                            <p>Eum Ad Dolor Et. Autem Aut Fugiat Debitis Voluptatem Consequuntur Sit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- our service end -->
+    <!-- our-service-end -->
 
-    <!-- why-us-start -->
-    <div class="why-wrapper">
+    <!-- client-start -->
+
+    <div class="client-wrapper">
         <div class="container">
+            <h2 class="text-center">Our Clients</h2>
+            <h4 class="text-center">We never make our clients sad because their satisfaction is every thing</h4>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="cmmn-head">
-                        <h6>Why Choose Us</h6>
-                        <h2>We provide truly prominent IT solutions for your success</h2>
-                    </div>
-                    <div class="why-box-wrap">
-                        <div class="why-box">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.7 8.4 166.9 8 160 8s-13.7 .4-20.4 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM208 176c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 400c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48z"/></svg>
-                            </div>
-                            <div class="why-content">
-                                <h6>Expert Team</h6>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            </div>
-                        </div>
-                        <div class="why-box">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.7 8.4 166.9 8 160 8s-13.7 .4-20.4 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM208 176c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 400c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48z"/></svg>
-                            </div>
-                            <div class="why-content">
-                                <h6>Expert Team</h6>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="why-box-wrap box-gap">
-                        <div class="why-box">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.7 8.4 166.9 8 160 8s-13.7 .4-20.4 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM208 176c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 400c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48z"/></svg>
-                            </div>
-                            <div class="why-content">
-                                <h6>Expert Team</h6>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            </div>
-                        </div>
-                        <div class="why-box">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.7 8.4 166.9 8 160 8s-13.7 .4-20.4 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM208 176c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 400c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48z"/></svg>
-                            </div>
-                            <div class="why-content">
-                                <h6>Expert Team</h6>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-4">
+                    <a href="javascript:;" class="client-box">
+                        <img src="images/client-01.png" alt="img">
+                    </a>
                 </div>
-                <div class="col-lg-6">
-                    <div class="why-image">
-                        <img src="images/why-us.png" alt="img" class="w-100">
-                        <div class="shape">
-                            <img src="images/circle.png" alt="img">
-                        </div>
-                    </div>
+                <div class="col-lg-4">
+                    <a href="javascript:;" class="client-box">
+                        <img src="images/client-02.png" alt="img">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="javascript:;" class="client-box">
+                        <img src="images/client-03.png" alt="img">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="javascript:;" class="client-box">
+                        <img src="images/client-04.png" alt="img">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="javascript:;" class="client-box">
+                        <img src="images/client-05.png" alt="img">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="javascript:;" class="client-box">
+                        <img src="images/client-06.png" alt="img">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- why-us-end -->
 
-    <!-- contact-start -->
-    <div class="contact-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="contact-content">
-                        <div class="cmmn-head">
-                            <h6>Contact Us</h6>
-                            <h2>Connect With Us</h2>
-                        </div>
-                        <form class="row">
-                            <div class="col-lg-6">
-                                <label for="">Name</label>
-                                <input type="text" placeholder="Enter Name">
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="">Email</label>
-                                <input type="text" placeholder="Enter Email">
-                            </div>
-                            <div class="col-lg-12">
-                                <label for="">Message</label>
-                                <textarea placeholder="Your Message"></textarea>
-                            </div>
-                            <div class="col-lg-12">
-                                <button type="submit" class="common-btn">Sent Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.5341360709886!2d75.87864981484427!3d22.67115173505972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fdc2ad268517%3A0x2344d262c1da7f7b!2sCubexO%20Software%20Solutions!5e0!3m2!1sen!2sin!4v1668702651049!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- contact-end -->
-
-    <!-- footer-start -->
-
-    <footer>
-        <div class="container-fluid">
-            
-        </div>
-    </footer>
-
-    <!-- footer-end -->
+    <!-- client-end -->
 
     <!-- js files -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        $(".search").click(function () {
-            $(".search-wrap").addClass("search-wrap-show");
-        });
-        $(".search-cross-icon").click(function () {
-            $(".search-wrap").removeClass("search-wrap-show");
-        });
-    </script>
 
 </body>
 
