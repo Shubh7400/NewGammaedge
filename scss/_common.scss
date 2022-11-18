@@ -94,6 +94,21 @@ input{
 	margin: 0 auto 50px;
 }
 
+input{
+	height: 50px;
+	width: 100%;
+	border-radius: 8px;
+	border: 1px solid #e9e9e9;
+	padding-left: 30px;
+}
+// textarea{
+// 	height: 50px;
+// 	width: 100%;
+// 	border-radius: 8px;
+// 	border: 1px solid #e9e9e9;
+// 	padding-left: 30px;
+// }
+
 // animation
 .animate-top-y{
 	animation-name: top-y;
