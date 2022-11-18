@@ -89,7 +89,6 @@
     background-color: #E3E5FC;
     padding: 60px 0;
     .quality-points{
-
         .s-point{
             display: flex;
             background-color: #ffffff;
@@ -126,7 +125,6 @@
         }
     }
 }
-
 @include for-991{
     .contact-wrap:after{
         display: none;
