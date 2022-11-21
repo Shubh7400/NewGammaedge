@@ -8,8 +8,8 @@
         }
         p{
             color: $white-color;
-            max-width: 740px;
-            padding: 32px 0;
+            max-width: 550px;
+            padding: 15px 0 30px 0;
         }
     }
     &::before{
@@ -23,6 +23,7 @@
         right: -58px;
         transform: scale(0.8);
         top: 30px;
+        z-index: 11;
     }
 }
 
@@ -59,6 +60,12 @@
     background-color: #5851BC;
     padding: 60px 0;
     position: relative;
+    h2, h4{
+        color: $white-color;
+    }
+    h4{
+        padding: 15px 0 20px 0;
+    }
     &:after{
         content: '';
         position: absolute;
@@ -167,7 +174,7 @@
         align-items: center;
         row-gap: 15px;
         h4{
-            padding: 40px 0;
+            padding: 20px 0 30px 0;
         }
     }
     .about-gap{
@@ -209,26 +216,65 @@
     h4{
         padding: 15px 0 45px 0;
     }
-    .service-box{
-        background-color: $white-color;
-        padding: 40px;
-        transform: translateY(0px);
-        transition: all 0.5s;
+    .content-inner{
+        width: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        backface-visibility: hidden;
         height: 100%;
-        &:hover{
-            transform: translateY(-10px);
-        }
-        .service-content{
+        transition: 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        .content-front, .content-back{
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            backface-visibility: hidden;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 45px 30px;
+            background-color: $white-color;
             h5{
-                a{
-                    font-size: 30px;
-                    color: $main-color;
-                    padding: 20px 0 15px 0;
-                    display: inline-block;
+                color: $main-color;
+                padding-top: 20px;
+            }
+        }
+        > *{
+            backface-visibility: hidden;
+            transition: 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .cf-inner{
+            width: 100%;
+            .inner{
+                align-items: stretch;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+                backface-visibility: hidden;
+                // transform: scale(0.81);
+                position: relative;
+                z-index: 99;
+                p{
+                    color: $white-color;
                 }
             }
-            p{
-                color: $main-color;
+        }
+        .content-back{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            transform: rotateY(180deg);
+            background: #443ea1;
+        }
+        &:hover{
+            .content-front{
+                transform: rotateY(-180deg);
+            }
+            .content-back{
+                transform: rotateY(0deg);
             }
         }
     }
