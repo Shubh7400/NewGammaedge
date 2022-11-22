@@ -239,6 +239,14 @@
                 color: $main-color;
                 padding-top: 20px;
             }
+            span{
+                position: absolute;
+                color: transparent;
+                -webkit-text-stroke: 2px #7973C9;
+                font-size: 50px;
+                top: 5px;
+                right: 15px;
+            }
         }
         > *{
             backface-visibility: hidden;
@@ -312,6 +320,7 @@
 .choose-wrap{
     background-color: #E3E5FC;
     padding: 60px 0;
+    margin: 100px 0;
     .quality-points{
         .s-point{
             display: flex;
@@ -352,5 +361,16 @@
 @include for-991{
     .contact-wrap:after{
         display: none;
+    }
+}
+
+@include for-480{
+    .choose-wrap .quality-points .s-point{
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 15px;
+    }
+    h2 {
+        font-size: 30px;
     }
 }

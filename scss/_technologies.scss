@@ -97,3 +97,21 @@
         }
     }
 }
+ @include for-767{
+    .filters ul{
+        flex-wrap: wrap;
+        row-gap: 15px;
+        li{
+            padding: 12px 17px;
+            font-size: 12px;
+        }
+    }
+ }
+
+
+ @include for-480{
+    footer .footer-form{
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+ }
