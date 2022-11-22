@@ -1,6 +1,5 @@
 .mainTechnologies {
-    background-color: #5851BC;
-    background-image: url('../images/bg.png');
+    background-image: url('../images/bg-service.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 0;
@@ -92,7 +91,7 @@
             cursor: pointer;
             &.active{
                 background-color: #ffffff;
-                color: #5851BC;
+                color: #7873C9;
             }
         }
     }

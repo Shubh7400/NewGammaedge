@@ -66,8 +66,8 @@ input {
 }
 
 .common-btn {
-  background-color: #5851BC;
-  border: 1px solid #5851BC;
+  background-color: #7873C9;
+  border: 1px solid #7873C9;
   color: #ffffff;
   min-width: 150px;
   height: 50px;
@@ -82,7 +82,7 @@ input {
   font-weight: 600;
 }
 .common-btn:hover {
-  background-color: #5851BC;
+  background-color: #7873C9;
   color: #ffffff;
   transition: all 0.5s;
 }
@@ -106,7 +106,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #5851BC;
+  color: #7873C9;
   border: 1px solid #ffffff;
   font-weight: 700;
   transition: all 0.5s;
@@ -118,7 +118,7 @@ input {
 }
 
 .cmmn-head h6 {
-  color: #5851BC;
+  color: #7873C9;
   text-transform: uppercase;
 }
 .cmmn-head h2 {
@@ -182,7 +182,7 @@ header nav ul .nav-item::after {
   display: block;
   width: 0;
   height: 2px;
-  background-color: #5851BC;
+  background-color: #7873C9;
   transition: width 0.2s;
   bottom: -8px;
   position: absolute;
@@ -199,7 +199,7 @@ header nav ul .nav-item:hover::after {
   width: 100%;
 }
 header nav ul .nav-item:hover .nav-link {
-  color: #5851BC;
+  color: #7873C9;
 }
 header .right-menu ul {
   display: flex;
@@ -224,7 +224,7 @@ header .right-menu ul li a svg {
   position: absolute;
   height: 3px;
   width: 70%;
-  background: #5851BC;
+  background: #7873C9;
   border-radius: 3px;
   opacity: 1;
   left: 25%;
@@ -292,13 +292,13 @@ header .right-menu ul li a svg {
 }
 
 #cssmenu ul li a {
-  color: #5851BC;
+  color: #7873C9;
   padding: 10px 15px;
-  border-bottom: 1px solid #5851BC;
+  border-bottom: 1px solid #7873C9;
   display: block;
 }
 #cssmenu ul li:hover a {
-  color: #5851BC;
+  color: #7873C9;
 }
 
 @media (max-width: 1440px) {
@@ -308,7 +308,7 @@ header .right-menu ul li a svg {
   }
 }
 .banner-wrap {
-  background-color: #5851BC;
+  background: linear-gradient(180deg, #7873C9 0%, rgba(88, 81, 188, 0.8) 100%);
   padding: 120px 0 130px 0;
   position: relative;
 }
@@ -352,7 +352,7 @@ header .right-menu ul li a svg {
   }
 }
 .contact-wrap {
-  background-color: #5851BC;
+  background-color: #756FC6;
   padding: 60px 0;
   position: relative;
 }
@@ -517,7 +517,7 @@ header .right-menu ul li a svg {
   background-color: #ffffff;
 }
 .service-wrap .content-inner .content-front h5, .service-wrap .content-inner .content-back h5 {
-  color: #5851BC;
+  color: #7873C9;
   padding-top: 20px;
 }
 .service-wrap .content-inner .content-front span, .service-wrap .content-inner .content-back span {
@@ -612,7 +612,7 @@ header .right-menu ul li a svg {
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  background-color: #5851BC;
+  background-color: #7873C9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -696,7 +696,7 @@ footer ul li a {
 }
 footer ul li a:hover {
   transform: translateX(7px);
-  color: #5851BC;
+  color: #7873C9;
 }
 footer .footer-form {
   display: flex;
@@ -741,8 +741,7 @@ footer .footer-form button {
   }
 }
 .mainTechnologies {
-  background-color: #5851BC;
-  background-image: url("../images/bg.png");
+  background-image: url("../images/bg-service.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px 0;
@@ -826,7 +825,7 @@ footer .footer-form button {
 }
 .filters ul li.active {
   background-color: #ffffff;
-  color: #5851BC;
+  color: #7873C9;
 }
 
 @media (max-width: 767px) {

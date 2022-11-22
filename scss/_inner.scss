@@ -1,5 +1,5 @@
 .banner-wrap{
-    background-color: $main-color;
+    background: linear-gradient(180deg, #7873C9 0%, rgba(88, 81, 188, 0.8) 100%);
     padding: 120px 0 130px 0;
     position: relative;
     .banner-content{
@@ -57,7 +57,7 @@
     }
 }
 .contact-wrap{
-    background-color: #5851BC;
+    background-color: #756FC6;
     padding: 60px 0;
     position: relative;
     h2, h4{
@@ -337,7 +337,7 @@
                 height: 50px;
                 width: 50px;
                 border-radius: 50px;
-                background-color: #5851BC;
+                background-color: #7873C9;
                 display: flex;
                 align-items: center;
                 justify-content: center;
