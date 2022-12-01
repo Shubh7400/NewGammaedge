@@ -161,3 +161,13 @@ header{
         }
     }
 }
+
+@include for-480{
+    header {
+        .logo {
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

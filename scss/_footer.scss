@@ -2,6 +2,9 @@ footer{
     background-color: #e3e5f6;
     padding: 50px 0;
     margin: 100px 0 0;
+    .row{
+        row-gap: 15px;
+    }
     h4{
         font-size: 24px;
         color: #101010;
@@ -96,5 +99,27 @@ footer{
 @include for-1366{
     footer .footer-form button{
         min-width: 100px;
+    }
+}
+
+@include for-991{
+    footer{
+        .footer-logo{
+            width: 100%;
+        }
+        .footer-form{
+            flex-wrap: wrap;
+            row-gap: 15px;
+        }
+    }
+}
+@include for-767{
+    footer {
+        h4{
+            margin-bottom: 15px;
+        }
+        .footer-logo{
+            width: auto;
+        }
     }
 }

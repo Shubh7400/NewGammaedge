@@ -307,6 +307,11 @@ header .right-menu ul li a svg {
     padding: 0 10px !important;
   }
 }
+@media (max-width: 480px) {
+  header .logo img {
+    width: 100%;
+  }
+}
 .banner-wrap {
   background: linear-gradient(180deg, #7873C9 0%, rgba(88, 81, 188, 0.8) 100%);
   padding: 120px 0 130px 0;
@@ -650,6 +655,9 @@ footer {
   padding: 50px 0;
   margin: 100px 0 0;
 }
+footer .row {
+  row-gap: 15px;
+}
 footer h4 {
   font-size: 24px;
   color: #101010;
@@ -740,6 +748,23 @@ footer .footer-form button {
     min-width: 100px;
   }
 }
+@media (max-width: 991px) {
+  footer .footer-logo {
+    width: 100%;
+  }
+  footer .footer-form {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+}
+@media (max-width: 767px) {
+  footer h4 {
+    margin-bottom: 15px;
+  }
+  footer .footer-logo {
+    width: auto;
+  }
+}
 .mainTechnologies {
   background-image: url("../images/bg-service.png");
   background-repeat: no-repeat;
@@ -780,10 +805,6 @@ footer .footer-form button {
   background: #FFFFFF;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   transition: all 0.5s;
-}
-.mainTechnologies .tecBox .icon img {
-  width: 30px;
-  max-height: 30px;
 }
 .mainTechnologies .tecBox .text {
   font-weight: 500;
@@ -843,4 +864,4 @@ footer .footer-form button {
     flex-wrap: wrap;
     row-gap: 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
