@@ -126,6 +126,15 @@ input {
   padding-bottom: 20px;
 }
 
+.menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 999;
+}
+
 .animate-top-y {
   animation-name: top-y;
   animation-duration: 2.5s;
@@ -192,14 +201,16 @@ header nav ul .nav-item::after {
 header nav ul .nav-item .nav-link {
   color: #111111;
   font-size: 16px;
-  padding: 0 12px !important;
+  padding: 7px 12px !important;
   font-weight: 600;
+  border-radius: 3px;
 }
 header nav ul .nav-item:hover::after {
   width: 100%;
 }
-header nav ul .nav-item:hover .nav-link {
-  color: #7873C9;
+header nav ul .nav-item.active .nav-link {
+  background-color: #7873C9;
+  color: #ffffff;
 }
 header .right-menu ul {
   display: flex;
@@ -304,7 +315,6 @@ header .right-menu ul li a svg {
 @media (max-width: 1440px) {
   header nav ul .nav-item .nav-link {
     font-size: 14px;
-    padding: 0 10px !important;
   }
 }
 .banner-wrap {

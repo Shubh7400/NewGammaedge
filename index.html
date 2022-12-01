@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header>
+    <header >
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6">
@@ -90,7 +90,13 @@
             </ul>
         </div>
     </div>
-    <div class="banner-wrap">
+
+    <audio id="audio">
+        <source src="images/music.mp3" type="audio/ogg">
+        <source src="images/music.mp3" type="audio/mpeg">
+      </audio>
+
+    <div class="banner-wrap section">
         <div id="particles-js"></div>
         <div class="container">
             <div class="row">
@@ -107,7 +113,7 @@
         </div>
     </div>
     <!-- about-us-start -->
-    <div class="about-wrapper" id="about">
+    <div class="about-wrapper section" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
@@ -128,7 +134,7 @@
     </div>
     <!-- about-us-end -->
     <!-- our-service-start -->
-    <div class="service-wrap" id="service">
+    <div class="service-wrap section" id="service">
         <div class="container">
             <h2>Our Services</h2>
             <h4>We provide best services & solutions</h4>
@@ -290,7 +296,7 @@
     </div>
     <!-- our-service-end -->
     <!-- client-start -->
-    <div class="client-wrapper" id="client">
+    <div class="client-wrapper section" id="client">
         <div class="container">
             <h2 class="text-center">Our Clients</h2>
             <h4 class="text-center">We never make our clients sad because their satisfaction is every thing</h4>
@@ -331,7 +337,7 @@
     <!-- client-end -->
     <!-- Technologies We Provide start -->
 
-    <div class="mainTechnologies" id="technologies">
+    <div class="mainTechnologies section" id="technologies">
         <div class="container">
             <div class="heading mb-5">
                 <h2 class="text-center" style="color:white">Technologies We Provide</h2>
@@ -582,7 +588,7 @@
     </div>
 
     <!-- Technologies We Provide end -->
-    <div class="choose-wrap" id="choose">
+    <div class="choose-wrap section" id="choose">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -692,7 +698,7 @@
         </div>
     </div>
 
-    <div class="contact-wrap" id="contact">
+    <div class="contact-wrap section" id="contact">
         <div class="container">
             <div class="heading">
                 <h2>Contact Us</h2>
@@ -905,13 +911,54 @@
 
 
     <!-- js files -->
-        <script src="js/jquery.js"></script>
-        <script src="js/particle.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src='https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js'></script>
-        <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src='https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js'></script>
+    <script src="js/main.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            var heightFixed = $('header').height();
+            $(window).scroll(function() {
+            if($(window).scrollTop() >= heightFixed) {
+                $('header').addClass('menu-fixed');
+            } else {
+                $('header').removeClass('menu-fixed');
+            }
+            });
+        });
+    </script>
+    <script>
+        $(window).scroll(function() {
+		var windscroll = $(window).scrollTop();
+		if (windscroll >= 100) {
+			$('.section').each(function(i) {
+                var music = document.getElementById("audio");
+				if ($(this).position().top <= windscroll ) {
+					$('.navbar-nav li.active').removeClass('active');
+					$('.navbar-nav li').eq(i).addClass('active');
+                    if(i === 1){
+                        music.play();
+                    }
+                    else{
+                        music.pause();
+                    }
+				}
+			});
+		} 
+        else {
+			$('.navbar-nav li.active').removeClass('active');
+			$('.navbar-nav li:first').addClass('active');
+		}
+
+		}).scroll();
+    </script>
+
+    <script>
+
+    </script>
 </body>
 
 </html>
