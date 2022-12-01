@@ -28,15 +28,22 @@ header{
                 .nav-link{
                     color: $black-color;
                     font-size: 16px;
-                    padding: 0 12px !important;
+                    padding: 7px 12px !important;
                     font-weight: 600;
+                    border-radius: 3px;
                 }
                 &:hover{
                     &::after{
                         width: 100%;
                     }
                     .nav-link{
-                        color: $main-color;
+                        // color: $main-color;
+                    }
+                }
+                &.active{
+                    .nav-link{
+                        background-color: $main-color;
+                        color: $white-color;
                     }
                 }
             }
@@ -154,7 +161,7 @@ header{
                 .nav-item {
                     .nav-link{
                         font-size: 14px;
-                        padding: 0 10px !important;
+                        // padding: 0 10px !important;
                     }
                 }
             }
