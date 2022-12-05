@@ -60,6 +60,7 @@
     background-color: #756FC6;
     padding: 60px 0;
     position: relative;
+    // margin: 100px 0 0;
     h2, h4{
         color: $white-color;
     }
@@ -169,7 +170,7 @@
 .about-wrapper{
     background-color: $bg-light;
     padding: 60px 0;
-    margin: 100px 0;
+    // margin: 100px 0 0;
     .row{
         align-items: center;
         row-gap: 15px;
@@ -207,6 +208,7 @@
     position: relative;
     background-size: cover;
     padding: 60px 0;
+    // margin: 100px 0 0;
     .row{
         row-gap: 40px;
     }
@@ -292,7 +294,7 @@
 .client-wrapper{
     background-color: $bg-light;
     padding: 60px 0;
-    margin: 100px 0;
+    // margin: 100px 0 0;
     .row{
         row-gap: 30px;
     }
@@ -320,7 +322,7 @@
 .choose-wrap{
     background-color: #E3E5FC;
     padding: 60px 0;
-    margin: 100px 0;
+    // margin: 100px 0 0; 
     .quality-points{
         .s-point{
             display: flex;

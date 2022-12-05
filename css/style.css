@@ -135,6 +135,10 @@ input {
   z-index: 999;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+
 .animate-top-y {
   animation-name: top-y;
   animation-duration: 2.5s;
@@ -186,27 +190,12 @@ header .logo img {
 header nav ul .nav-item {
   position: relative;
 }
-header nav ul .nav-item::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background-color: #7873C9;
-  transition: width 0.2s;
-  bottom: -8px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
 header nav ul .nav-item .nav-link {
   color: #111111;
   font-size: 16px;
   padding: 7px 12px !important;
   font-weight: 600;
   border-radius: 3px;
-}
-header nav ul .nav-item:hover::after {
-  width: 100%;
 }
 header nav ul .nav-item.active .nav-link {
   background-color: #7873C9;
@@ -465,7 +454,6 @@ header .right-menu ul li a svg {
 .about-wrapper {
   background-color: #E3E5FC;
   padding: 60px 0;
-  margin: 100px 0;
 }
 .about-wrapper .row {
   align-items: center;
@@ -576,7 +564,6 @@ header .right-menu ul li a svg {
 .client-wrapper {
   background-color: #E3E5FC;
   padding: 60px 0;
-  margin: 100px 0;
 }
 .client-wrapper .row {
   row-gap: 30px;
@@ -604,7 +591,6 @@ header .right-menu ul li a svg {
 .choose-wrap {
   background-color: #E3E5FC;
   padding: 60px 0;
-  margin: 100px 0;
 }
 .choose-wrap .quality-points .s-point {
   display: flex;

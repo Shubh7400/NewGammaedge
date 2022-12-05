@@ -13,18 +13,18 @@ header{
         ul{
             .nav-item{
                 position: relative;
-                &::after{
-                    content: '';
-                    display: block;
-                    width: 0;
-                    height: 2px;
-                    background-color: $main-color;
-                    transition: width .2s;
-                    bottom: -8px;
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
+                // &::after{
+                //     content: '';
+                //     display: block;
+                //     width: 0;
+                //     height: 2px;
+                //     background-color: $main-color;
+                //     transition: width .2s;
+                //     bottom: -8px;
+                //     position: absolute;
+                //     left: 50%;
+                //     transform: translateX(-50%);
+                // }
                 .nav-link{
                     color: $black-color;
                     font-size: 16px;
@@ -33,9 +33,9 @@ header{
                     border-radius: 3px;
                 }
                 &:hover{
-                    &::after{
-                        width: 100%;
-                    }
+                    // &::after{
+                    //     width: 100%;
+                    // }
                     .nav-link{
                         // color: $main-color;
                     }
