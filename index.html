@@ -92,10 +92,10 @@
         </div>
     </div>
 
-    <audio id="audio">
+    <!-- <audio id="audio">
         <source src="images/music.mp3" type="audio/ogg">
         <source src="images/music.mp3" type="audio/mpeg">
-      </audio>
+      </audio> -->
 
       <div class="section" id="banner">
         <div class="banner-wrap ">
@@ -956,16 +956,16 @@
         // console.log(windscroll)
 		if (windscroll >= 100) {
 			$('.section').each(function(i) {
-                var music = document.getElementById("audio");
+                // var music = document.getElementById("audio");
 				if ($(this).position().top <= windscroll ) {
 					$('.navbar-nav li.active').removeClass('active');
 					$('.navbar-nav li').eq(i).addClass('active');
-                    if(i === 1){
-                        music.play();
-                    }
-                    else{
-                        music.pause();
-                    }
+                    // if(i === 1){
+                    //     music.play();
+                    // }
+                    // else{
+                    //     music.pause();
+                    // }
 				}
 			});
 		} 
