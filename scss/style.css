@@ -419,12 +419,13 @@ header .right-menu ul li a svg {
   margin-bottom: 20px;
 }
 .contact-wrap .contact-info span {
-  height: 70px;
-  width: 70px;
+  height: 40px;
+  width: 40px;
   border-radius: 10px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
+  padding: 8px;
   justify-content: center;
   flex: none;
 }
