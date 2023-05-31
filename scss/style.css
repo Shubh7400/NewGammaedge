@@ -8,7 +8,7 @@ body {
   background: #ffffff;
   color: #000000;
   transition: all 0.5s;
-    font-family: quicksand, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
@@ -30,11 +30,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin: 0;
   transition: all 0.5s;
-  color: #111111;
+  color: #232323;
+  font-size: 70px;
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 70px;
 }
 
 h2 {
@@ -192,7 +193,7 @@ header nav ul .nav-item {
   position: relative;
 }
 header nav ul .nav-item .nav-link {
-  color: #111111;
+  color: #232323;
   font-size: 16px;
   padding: 7px 12px !important;
   font-weight: 600;
@@ -318,6 +319,7 @@ header .right-menu ul li a svg {
   position: relative;
 }
 .banner-wrap .banner-content h1 {
+  font-size: 70px;
   color: #ffffff;
 }
 .banner-wrap .banner-content p {
@@ -345,7 +347,7 @@ header .right-menu ul li a svg {
     transform: scale(0.6);
   }
   .banner-wrap h1 {
-    font-size: 60px;
+    font-size: 70px;
   }
   .banner-wrap .banner-content p {
     max-width: 630px;
