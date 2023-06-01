@@ -1,6 +1,8 @@
 header{
     background-color: $white-color;
     padding: 20px 0;
+    position: sticky;
+    top:0px;
     .row{
         align-items: center;
     }
