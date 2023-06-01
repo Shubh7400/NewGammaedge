@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/logo.css" />
 </head>
 
 
@@ -34,8 +34,9 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                     <div class="logo">
-                        <a href="javascript:;">
-                            <img src="images/logo1.png" alt="logo">
+                        <a class="" href="javascript:;">
+                        <img src="./images/logo1.png" style="max-width: 100%;">
+                        <img src="./images/f" style="max-width: 100%;">
                         </a>
                     </div>
                 </div>
@@ -63,9 +64,9 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#service">Services</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link" href="#client">Our Clients</a>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-item">
                                         <a class="nav-link" href="#technologies">Technologies</a>
                                     </li>
@@ -95,7 +96,7 @@
                 <li><a href="javascript:;">Home</a></li>
                 <li><a href="javascript:;">About US</a></li>
                 <li><a href="javascript:;">Services</a></li>
-                <li><a href="javascript:;">Our Clients</a></li>
+                <!-- <li><a href="javascript:;">Our Clients</a></li> -->
                 <li><a href="javascript:;">Technologies</a></li>
                 <li><a href="javascript:;">Why US
                     </a></li>
@@ -117,8 +118,9 @@
                     <div class="col-lg-10">
                         <div class="banner-content">
                             <h1>Intelligences' Next Edge of Innovation</h1>
-                            <p>We Provide Exceptionally Great - Quality Web & Mobile Development
-                                Services - Aided By Cutting - Edge Technology.</p>
+                            <p>We Provide Exceptionally Great - Exquisite and Trailblazing solutions - Aided By Cutting
+                                - Edge Technology.
+                            </p>
                             <!-- <a href="#service" class="banner-btn">Get Started</a> -->
                         </div>
                     </div>
@@ -175,8 +177,8 @@
                                 <div class="content-front">
                                     <div class="cf-inner">
                                         <div class="inner">
-                                            <img src="images/mobileDeveloper1.png" style="max-width: 100%;" alt="img">
-                                            <h5 style="text-align: center;">Mobile Development</h5>
+                                            <img src="images/blockchain.png" style="max-width: 100%;" alt="img">
+                                            <h5 style="text-align: center;">Blockchain</h5>
                                         </div>
                                     </div>
                                     <!-- <span>01</span> -->
@@ -184,10 +186,10 @@
                                 <div class="content-back">
                                     <div class="cf-inner">
                                         <div class="inner">
-                                            <p>At our company, we take pride in offering bespoke software development
-                                                and mobile app development services that deliver cutting-edge,
-                                                feature-rich solutions for a range of platforms including iOS, Android,
-                                                and cross-platform mobile apps.</p>
+                                            <p> We are a visionary company at the forefront of harnessing the power of
+                                                blockchain technologies to unlock new frontiers in security,
+                                                transparency, and efficiency. Our commitment to innovation extends
+                                                beyond established sectors with our cutting-edge solutions.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -226,8 +228,8 @@
                                 <div class="content-front">
                                     <div class="cf-inner">
                                         <div class="inner">
-                                            <img src="images/IOT (1).png" style="max-width: 100%;" alt="img">
-                                            <h5 style="text-align: center;">IOT Solution</h5>
+                                            <img src="images/devops.png" style="max-width: 100%;" alt="img">
+                                            <h5 style="text-align: center;">DevOps</h5>
                                         </div>
                                         <!-- <span>03</span> -->
                                     </div>
@@ -235,10 +237,10 @@
                                 <div class="content-back">
                                     <div class="cf-inner">
                                         <div class="inner">
-                                            <p>At our company, we specialize in enabling the seamless integration of the
-                                                Internet of Things (IoT) within your business. By leveraging
-                                                cutting-edge sensor technology, we can provide you with unparalleled
-                                                transparency into your operations.
+                                            <p>Our Company serves ingenious blend of cutting-edge tools and a
+                                                forward-thinking mindset, sets a new standard for streamlined
+                                                development, continuous integration, and seamless deployment. We empower
+                                                businesses to embrace change and be a part of unparalleled success.
                                             </p>
                                         </div>
                                     </div>
@@ -922,16 +924,16 @@
                         <li><a href="javascript:;">
                                 our service
                             </a></li>
-                        <li><a href="javascript:;">
+                        <!-- <li><a href="javascript:;">
                                 our client
-                            </a></li>
+                            </a></li> -->
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                     <h4>Contact US</h4>
                     <ul>
 
-                        <li><a href="javascript:;" style="margin-bottom: -20px;" >
+                        <li><a href="javascript:;" style="margin-bottom: -20px;">
                                 <span style="height:40px; width: 40px; padding:8px;">
                                     <svg width="53" height="53" viewBox="0 0 53 53" fill="none"
                                         xmlns="http://www.w3.org/2000/svg" style="max-width: 18px;">
@@ -1040,9 +1042,33 @@
     //   console.log("The paragraph was clicked.");
     // });
 
+
+    </script>
+
+    <script>
+        $(function () {
+            var logo = $(".lrg-logo"); $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 500) {
+                    if (!logo.hasClass("sml-logo")) {
+                        logo.hide();
+                        logo.removeClass('lrg-logo').addClass("sml-logo").fadeIn("slow");
+                    }
+                } else {
+                    if (!logo.hasClass("lrg-logo")) {
+                        logo.hide();
+                        logo.removeClass("sml-logo").addClass('lrg-logo').fadeIn("slow");
+                    }
+                }
+
+            });
+        });
     </script>
     <script async src="https://tag.clearbitscripts.com/v1/pk_23e68c6b2fbf661a25c134d8ca2d9c78/tags.js"
         referrerpolicy="strict-origin-when-cross-origin"></script>
+
+
 </body>
 
 </html>
