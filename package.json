@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "@types/bootstrap": "^5.2.6"
+  },
+  "dependencies": {
+    "inline-css": "^4.0.2",
+    "node-sass": "^9.0.0"
   }
 }

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/logo.css" />
+    <!-- <link rel="stylesheet" href="scss/_technologies.scss" /> -->
+
 </head>
 
 
@@ -28,6 +30,11 @@
 
         }
     </style>
+    <style>
+        #more {
+            display: none;
+        }
+    </style>
 
     <header style="position: sticky;
     top:0px; z-index: 1000;     height: 90px;
@@ -37,7 +44,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                     <div class="logo">
                         <a class="" href="javascript:;">
-                            <img id="logo_change" src="./images/logo.png" class="lrg-logo">
+                            <img id="logo_change" src="./images/logo1.png" class="lrg-logo">
                             <!-- <img src="./images/favicon.png" class="sml-logo" style="max-width: 100%;"> -->
                         </a>
                     </div>
@@ -91,7 +98,7 @@
     </header>
     <div id="sidebar">
         <div class="respnsv-logo">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo1.png" alt="logo">
         </div>
         <div id="cssmenu">
             <ul>
@@ -150,7 +157,7 @@
                         <p>We are a team of skilled and imaginative professionals that helps businesses
                             to tell their story to the world.
                         </p>
-                        <p class="about-gap"> Our aim is to craft an one-of-a-kind experience.
+                        <p class="about-gap"> Our Aim is to craft an one-of-a-kind Experience.
                         </p>
                     </div>
                 </div>
@@ -452,6 +459,10 @@
         </div>
     </div> -->
 
+
+
+
+
     <!-- client-end -->
 
     <!-- Technologies We Provide start -->
@@ -466,17 +477,18 @@
                     <ul>
                         <!-- <li data-filter=".all ">All</li> -->
                         <li class="active" data-filter=".all ">All</li>
-                        <li data-filter=".frontend ">Frontend</li>
-                        <li data-filter=".backend">Backend</li>
-                        <li data-filter=".mobile">Mobile Developer</li>
-                        <li data-filter=".qa">Quality Assurance</li>
-                        <li data-filter=".full-stack">Full Stack</li>
+                        <li data-filter=".frontend " class="">Frontend</li>
+                        <li data-filter=".backend" class="">Backend</li>
+                        <li data-filter=".mobile" class="">Mobile</li>
+                        <li data-filter=".qa" class="">Quality Assurance</li>
+                        <li data-filter=".devops" class="">DevOps</li>
+                        <li data-filter=".fullstack" class="">Full Stack</li>
                     </ul>
                 </div>
 
                 <div class="filters-content">
-                    <div class="row grid">
-                        <div class="col-lg-3 col-md-6 col-12 all frontend">
+                    <div class="row grid" style="height: 828px;">
+                        <div class="col-lg-3 col-md-6 col-12   all frontend" style=" left: 0%; top: 0px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -485,14 +497,30 @@
                                     <div class="text">
                                         React
                                     </div>
-                                    <p class="text-center">React is a transformative and dynamic JavaScript library that
-                                        empowers developers to create exceptional user interfaces (UIs) for web
-                                        applications.
+
+                                    <p class="text-center">React is a JavaScript library for building user interfaces
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">and
+                                            flexible JavaScript library for building reusable UI components.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12  all frontend">
+
+                        <div class="col-lg-3 col-md-6 col-12  all frontend" style=" left: 25%; top: 0px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -501,12 +529,29 @@
                                     <div class="text">
                                         Angular JS
                                     </div>
-                                    <p class="text-center">AngularJS is an innovative JavaScript-based framework that
-                                        revolutionises web application development.</p>
+                                    <p class="text-center">AngularJS is an innovative JavaScript-based framework
+
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">that revolutionises web application
+                                            development.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12  all frontend">
+                        <div class="col-lg-3 col-md-6 col-12  all frontend" style=" left: 50%; top: 0px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -516,11 +561,27 @@
                                         Meteor
                                     </div>
                                     <p class="text-center">Meteor is an extraordinary entity that descends from the
-                                        celestial realm to revolutionize the front-end development landscape.</p>
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            celestial realm to revolutionize the front-end development landscape.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12  all frontend">
+                        <div class="col-lg-3 col-md-6 col-12  all frontend" style=" left: 75%; top: 0px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -529,13 +590,30 @@
                                     <div class="text">
                                         Electron JS
                                     </div>
-                                    <p class="text-center">Electron JS, often referred to as just Electron, is an
-                                        innovative framework that has revolutionized the way you create desktop
-                                        applications.</p>
+                                    <p class="text-center">Electron JS, often referred to as just Electron is an
+                                        innovative
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            framework that has revolutionized the way you create desktop
+                                            applications.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12  all backend">
+                        <div class="col-lg-3 col-md-6 col-12 item-container all backend" style=" left: 0%; top: 207px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -545,12 +623,29 @@
                                         Python
                                     </div>
                                     <p class="text-center">Python is not just a programming language; it's a versatile
-                                        and dynamic tool that unlocks the realm of endless possibilities.
+
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">and dynamic tool that unlocks the realm
+                                            of endless possibilities.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12  all backend">
+                        <div class="col-lg-3 col-md-6 col-12 item-container all backend"
+                            style=" left: 25%; top: 207px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -559,13 +654,31 @@
                                     <div class="text">
                                         Django
                                     </div>
-                                    <p class="text-center">Django is an elegant and robust web framework that
-                                        empowers to create dynamic websites and web applications with ease.
+                                    <p class="text-center">Django is an elegant and robust web framework that empowers
+
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            to create dynamic websites and web applications with ease.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12  all backend">
+
+                        <div class="col-lg-3 col-md-6 col-12 item-container all backend"
+                            style=" left: 50%; top: 207px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -574,15 +687,29 @@
                                     <div class="text">
                                         Node JS
                                     </div>
-                                    <p class="text-center">Node.js is a groundbreaking and dynamic open-source runtime
-                                        environment that allows the creation of scalable and high-performance network
-                                        applications.
+                                    <p class="text-center"> Node.js is a groundbreaking and dynamic runtime environment
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;"> that allows the high-performance network
+                                            application.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-12 all mobile">
+                        <div class="col-lg-3 col-md-6 col-12 item-container all mobile" style=" left: 75%; top: 207px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -591,12 +718,28 @@
                                     <div class="text">
                                         Flutter
                                     </div>
-                                    <p class="text-center">Flutter is a remarkable and cutting-edge open-source UI
-                                        toolkit to create applications for mobile, web, and desktop. </p>
+                                    <p class="text-center"> Flutter is a remarkable and cutting-edge open-source UI
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            toolkit to create applications for mobile, web, and desktop.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 all mobile">
+                        <div class="col-lg-3 col-md-6 col-12 item-container all mobile" style=" left: 0%; top: 414px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -605,14 +748,30 @@
                                     <div class="text">
                                         Ionic
                                     </div>
-                                    <p class="text-center">Ionic is a cutting-edge framework that blends the power
-                                        of HTML, CSS, and JavaScript to create seamless, high-performance mobile and web
-                                        applications.
-                                        .</p>
+                                    <p class="text-center"> Ionic is a cutting-edge framework that blends the power of
+                                        HTML,
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            CSS, and JavaScript to create high-performance applications.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 all mobile">
+
+                        <div class="col-lg-3 col-md-6 col-12 item-container all mobile" style=" left: 25%; top: 414px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -621,13 +780,30 @@
                                     <div class="text">
                                         Android
                                     </div>
-                                    <p class="text-center">Android is a mobile operating system based on a modified
-                                        version
-                                        of the Linux kernel.</p>
+                                    <p class="text-center"> Android is a mobile operating system based on a modified
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            version of the Linux kernel.a web browser and end-user applications.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 all mobile">
+
+
+                        <div class="col-lg-3 col-md-6 col-12 item-container all mobile" style=" left: 50%; top: 414px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -636,13 +812,32 @@
                                     <div class="text">
                                         IOS
                                     </div>
-                                    <p class="text-center">It is the world's second-most widely installed mobile
+                                    <p class="text-center"> It is the world's second-most widely installed mobile
                                         operating
-                                        system, after Android.</p>
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            system, after Android.
+                                            Apple iOS stands for iPhone operating system.
+
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 all qa">
+
+                        <div class="col-lg-3 col-md-6 col-12 item-container all qa" style=" left: 75%; top: 414px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -651,13 +846,30 @@
                                     <div class="text">
                                         API Testing
                                     </div>
-                                    <p class="text-center">API testing is like being a detective for software
-                                        applications. API investigation involves examining the communication channels
-                                        between software components.</p>
+                                    <p class="text-center"> API testing is being a detective for software applications
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            API involves communication channels
+                                            between software components.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 all qa">
+
+                        <div class="col-lg-3 col-md-6 col-12 all item-container qa" style=" left: 0%; top: 621px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -667,11 +879,29 @@
                                         Load Testing
                                     </div>
                                     <p class="text-center">Load testing is an essential practice in software development
-                                        that involves testing the strength, endurance, and overall performance.</p>
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            that involves testing the strength,and overall performance.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 all qa">
+
+
+                        <div class="col-lg-3 col-md-6 col-12  item-container all qa" style=" left: 25%; top: 621px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -681,12 +911,27 @@
                                         QA Automation
                                     </div>
                                     <p class="text-center">QA Automation is a software testing process that focuses on
-                                        the implementation of automated processes and tools to enhance the quality and
-                                        efficiency of software development. </p>
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            the implementation of automated processes and tools.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 all qa">
+                        <div class="col-lg-3 col-md-6 col-12 item-container all qa" style=" left: 50%; top: 621px;">
                             <div class="item">
                                 <div class="tecBox">
                                     <div class="icon">
@@ -695,125 +940,279 @@
                                     <div class="text">
                                         QA Manual
                                     </div>
-                                    <p class="text-center">QA Manual, short for Quality Assurance Manual, is an
-                                        essential component of any software development process. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12  full-stack">
-                            <div class="item">
-                                <div class="tecBox">
-                                    <div class="icon">
-                                        <img src="images/react.png" alt="img">
-                                    </div>
-                                    <div class="text">
-                                        React
-                                    </div>
-                                    <p class="text-center">React is a JavaScript library for building user interfaces.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12  full-stack">
-                            <div class="item">
-                                <div class="tecBox">
-                                    <div class="icon">
-                                        <img src="images/python.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        Python
-                                    </div>
-                                    <p class="text-center">Python can be used on a server to create web applications.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12  full-stack">
-                            <div class="item">
-                                <div class="tecBox">
-                                    <div class="icon">
-                                        <img src="images/django.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        Django
-                                    </div>
-                                    <p class="text-center">Django is a back-end server side web framework.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12  full-stack">
-                            <div class="item">
-
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12  full-stack">
-                            <div class="item">
-                                <div class="tecBox">
-                                    <div class="icon">
-                                        <img src="images/mateor.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        Meteor
-                                    </div>
-                                    <p class="text-center">Meteor is an open-source platform for web, mobile, and
-                                        desktop
-                                        used by over half a million developers around the globe.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12  full-stack">
-                            <div class="item">
-                                <div class="tecBox">
-                                    <div class="icon">
-                                        <img src="images/mean.png" alt="img" style="max-width: 40px;">
-                                    </div>
-                                    <div class="text">
-                                        Mean Stack
-                                    </div>
-                                    <p class="text-center">Mean Stack, is a powerful and versatile technology stack that
-                                        empowers developers to build robust and dynamic web applications.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12  full-stack">
-                            <div class="item">
-                                <div class="tecBox">
-                                    <div class="icon">
-                                        <img src="images/golang (1).png" alt="img" style="max-width: 40px;">
-                                    </div>
-                                    <div class="text">
-                                        Golang
-                                    </div>
-                                    <p class="text-center">Go is an open source programming language that makes it easy
-                                        to build simple, reliable, and efficient software.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12  full-stack">
-                            <div class="item">
-                                <div class="tecBox">
-                                    <div class="icon">
-                                        <img src="images/javascript.png" alt="img" style="max-width: 40px;">
-                                    </div>
-                                    <div class="text">
-                                        JavaScript
-                                    </div>
-                                    <p class="text-center">JavaScript (JS) is a lightweight, interpreted, or
-                                        just-in-time compiled programming language with first-class functions.
+                                    <p class="text-center"> QA Manual, short for Quality Assurance Manual, is an
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            essential component of any software development process.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="col-lg-3 col-md-6 col-12 item-container all devops" style=" left: 50%; top: 621px;">
+                            <div class="item">
+                                <div class="tecBox">
+                                    <div class="icon">
+                                        <img src="images/azure.png" alt="" style="max-width: 40px;">
+                                    </div>
+                                    <div class="text">
+                                        Azure
+                                    </div>
+                                    <p class="text-center"> Azure is an expansive and dynamic cloud computing platform
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            ,it offers storage,databases,machine learning among others.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 item-container all devops" style=" left: 50%; top: 621px;">
+                            <div class="item">
+                                <div class="tecBox">
+                                    <div class="icon">
+                                        <img src="images/GCP Logo.png" alt="" style="max-width: 40px;">
+                                    </div>
+                                    <div class="text">
+                                        GCP
+                                    </div>
+                                    <p class="text-center"> GCP, short for Google Cloud Platform, is a cutting-edge
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            cloud computing service provided by Google.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 item-container all devops" style=" left: 50%; top: 621px;">
+                            <div class="item">
+                                <div class="tecBox">
+                                    <div class="icon">
+                                        <img src="images/aws.png" alt="" style="max-width: 40px;">
+                                    </div>
+                                    <div class="text">
+                                        AWS
+                                    </div>
+                                    <p class="text-center">AWS, or Amazon Web Services, is a pioneering cloud computing
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            platform that has revolutionized the way individuals and businesses.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6 col-12 item-container all devops" style=" left: 50%; top: 621px;">
+                            <div class="item">
+                                <div class="tecBox">
+                                    <div class="icon">
+                                        <img src="images/docker.png" alt="" style="max-width: 40px;">
+                                    </div>
+                                    <div class="text">
+                                        Docker
+                                    </div>
+                                    <p class="text-center"> Docker is a powerful and innovative platform that  revolutionizes
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            the way software applications are developed, deployed, and run.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 item-container all devops" style=" left: 50%; top: 621px;">
+                            <div class="item">
+                                <div class="tecBox">
+                                    <div class="icon">
+                                        <img src="images/kubernetes logo.png" alt="" style="max-width: 40px;">
+                                    </div>
+                                    <div class="text">
+                                        Kubernetes
+                                    </div>
+                                    <p class="text-center"> Kubernetes is a sophisticated container orchestration
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                          Platform that acts as a control center for automating the deployment.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 item-container all fullstack" style=" left: 0%; top: 0px; display: none">
+                            <div class="item">
+                                <div class="tecBox">
+                                    <div class="icon">
+                                        <img src="images/React+Python.png" alt="img" style="max-width: 40px;">
+                                    </div>
+                                    <div class="text">
+                                        React+Python
+                                    </div>
+                                    <p class="text-center">Node+React is a dynamic duo in the world of web 
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            development, combining the versatility of Node.js with the flexibility of React.js.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 item-container all  fullstack"
+                            style=" left: 25%; top: 0px; display: none;">
+                            <div class="item">
+                                <div class="tecBox">
+                                    <div class="icon">
+                                        <img src="images/NodeJS+React.png" alt="" style="max-width: 40px;">
+                                    </div>
+                                    <div class="text">
+                                        Node+React
+                                    </div>
+                                    <p class="text-center"> React+Python is a powerful and dynamic combination 
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            of technologies that brings together the front-end prowess of React and the backend 
+                                            capabilities of Python.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 item-container all fullstack"
+                            style=" left: 50%; top: 0px; display: none;">
+                            <div class="item">
+                                <div class="tecBox">
+                                    <div class="icon">
+                                        <img src="images/mean.png" alt="" style="max-width: 40px;">
+                                    </div>
+                                    <div class="text">
+                                        Mean
+                                    </div>
+                                    <p class="text-center">Mean Stack, is a powerful and versatile technology stack
+                                        <span id="dots"></span>
+                                        <span id="more" style="display: none;">
+                                            that empowers developers to build robust and dynamic web applications.
+                                        </span>
+                                        <button class="bg-remove" onclick="myFunction(this)">
+                                            <svg id="buttonSvg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512">
+                                                <style>
+                                                    svg {
+                                                        fill: #000000
+                                                    }
+                                                </style>
+                                                <path id="buttonPath"
+                                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                            </svg>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- </div> -->
 
 
 
@@ -1145,6 +1544,7 @@
         //     });
         // });
     </script>
+
     <script>
         $(window).scroll(function () {
             var windscroll = $(window).scrollTop() + 100;
@@ -1191,39 +1591,29 @@
     // $("#navbarNav > ul > li > a").bind("click", function(){
     //   console.log("The paragraph was clicked.");
     // });
+    </script>
+    <script>
+        function myFunction(button) {
+            var parent = button.parentNode;
+            var dots = parent.querySelector("#dots");
+            var moreText = parent.querySelector("#more");
+            var buttonPath = parent.querySelector("#buttonPath");
 
-
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                buttonPath.setAttribute("d", "M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"); // Change the path for "More"
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                buttonPath.setAttribute("d", "M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"); // Change the path for "Less"
+                moreText.style.display = "inline";
+            }
+        }
     </script>
 
-    <!-- <script>
-        $(function () {
-            var logo = $(".lrg-logo"); $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
-
-                if (scroll >= 1) {
-                    if (!logo.hasClass("sml-logo")) {
-                        logo.hide();
-                        logo.removeClass('lrg-logo').addClass("sml-logo").fadeIn("fast");
-                        document.getElementById("logo_change").src = "./images/favicon.png"
-                        document.getElementById("logo_change").style.maxWidth = "15%";
-
-
-                    }
-                } else {
-                    if (!logo.hasClass("lrg-logo")) {
-                        logo.hide();
-                        logo.removeClass("sml-logo").addClass('lrg-logo').fadeIn("slow");
-                        document.getElementById("logo_change").src = "./images/logo1.png"
-                        document.getElementById("logo_change").style = maxWidth = "100%;";
 
 
 
-                    }
-                }
-
-            });
-        });
-    </script> -->
     <script async src="https://tag.clearbitscripts.com/v1/pk_23e68c6b2fbf661a25c134d8ca2d9c78/tags.js"
         referrerpolicy="strict-origin-when-cross-origin"></script>
 

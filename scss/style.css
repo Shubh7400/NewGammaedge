@@ -834,8 +834,6 @@ footer .footer-form button {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
-  line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 .mainTechnologies .tecBox:hover .icon {
@@ -878,3 +876,4 @@ footer .footer-form button {
     row-gap: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
+
