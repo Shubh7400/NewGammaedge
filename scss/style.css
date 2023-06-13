@@ -442,7 +442,7 @@ header .right-menu ul li a svg {
   margin-bottom: 10px;
 }
 .contact-wrap .contact-info p {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 14px;
   color: #ffffff;
 }
@@ -876,4 +876,3 @@ footer .footer-form button {
     row-gap: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
-

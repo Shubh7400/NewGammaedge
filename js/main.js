@@ -143,5 +143,5 @@ $('.filters ul li').click(function(){
       "retina_detect": true
     });
   
-  requestAnimationFrame();
+  // requestAnimationFrame();
 
