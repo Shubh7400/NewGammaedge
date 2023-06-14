@@ -16,3 +16,16 @@
     background-color: #ffffff;
     color: #756FC6 !important;
 }
+.contact-wrap:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 0;
+  background-image: url(../images/contact.webp) !important;
+  width: 35%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
