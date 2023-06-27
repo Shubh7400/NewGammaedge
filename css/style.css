@@ -872,4 +872,9 @@ footer .footer-form button {
   background: none;
 }
 
-
+.contact-wrap .contact-info a {
+  font-size: 14px !important;
+  line-height: 19px !important;
+  color: #ffffff;
+  display: block;
+}
